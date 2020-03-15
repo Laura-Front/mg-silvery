@@ -1,0 +1,194 @@
+/*-------------  sticky footer  ---------------------*/
+
+@media only screen and (min-width: 768px) {
+	
+	 html, body {
+        height: 100%;
+    }
+	
+    #page-wrap {
+        min-height: 100%;
+        margin-bottom: -130px;
+    }
+	
+	
+    #page-wrap:after {
+        content: "";
+        display: block;
+        height: 130px;
+    }
+	
+    footer {
+        min-height: 130px;
+    }
+
+
+
+    .product-name {
+        -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+        transition: transform 0.35s, color 0.35s;
+        -webkit-transform: translate3d(0,-50%,0);
+        transform: translate3d(0,-50%,0);
+    }
+
+    .card-body {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .shop {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transform: translate3d(0,10px,0);
+        transition:  opacity .5s ease;
+        padding: 10px;
+    }
+
+
+}
+
+@media only screen and  (min-width: 992px) {
+
+
+    .animate-toggle {
+        position: absolute;
+        z-index: 100;
+        right: 30px;
+        top: 85px;
+        width: 400px;
+        background-color: #fff;
+        border: 1px solid #e3e6f0;
+        box-shadow: 0 0 1.5625rem rgba(21, 27, 38, 0.1);
+        padding: 0 20px;
+        animation-name: slidetoggle;
+        animation-duration: .5s;
+    }
+
+
+    @keyframes slidetoggle {
+        0% {
+            -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    .silvery-header.sticky {
+        position: fixed;
+        z-index: 110;
+        animation-name: stickydown;
+        animation-duration: 1s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    }
+    @keyframes stickydown {
+        0% {
+            top: -100px;
+            opacity: 0;
+
+        }
+        100% {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    .search-link,
+    .menu-categories {
+        border-left: 1px solid gray;
+    }
+
+    .form-hide {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .navbar-dark .navbar-nav .active > .nav-link {
+        background-color: rgba(255,255,255,.1);
+    }
+
+
+    .navbar-collapse {
+        border-top: 1px solid white!important;
+        position: absolute;
+        top: 95px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background-color: black;
+    }
+
+
+    .navbar-brand,
+    .navbar-dark .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .product-categories__item {
+        height: 150px;
+        width: 150px;
+    }
+
+    .fa, .fas, .far, .fal, .fad, .fab {
+        display: block;
+    }
+
+    .menu-categories {
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding-left: 15px;
+    }
+
+
+    .nav-link:hover {
+        background-color: rgba(255,255,255,.1);
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+    .card {
+        width: 18rem;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+    .main-txt {
+        font-size: 1rem;
+    }
+
+    .carousel-control-icon {
+        display: none;
+    }
+
+    .card-body {
+        color: #2a2d32 !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+.social-list {
+    flex-direction: column;
+    text-align: center;
+}
+
+
+    .social-list li {
+        margin-bottom: 10px;
+    }
+}

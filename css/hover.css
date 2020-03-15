@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+
+    .nav-link:hover,
+    .product-categories__link:hover {
+        color: #9acd32!important;
+
+    }
+
+
+    .btn:hover {
+        background-color: #8ab92d;
+    }
+
+
+    .product-categories__link:hover img {
+        border-color: #000000!important;
+    }
+
+    .card a:hover:before {
+        opacity: 1;
+    }
+
+    .card:hover .shop {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+
+
+    .card:hover .product-name {
+        -webkit-transform: translate3d(0,-50%,0) translate3d(0,-125px,0);
+        transform: translate3d(0,-50%,0) translate3d(0,-125px,0);
+    }
+
+    .silvery-img:hover .second-img{
+        opacity: 1;
+    }
+
+
+}
